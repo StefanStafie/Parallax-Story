@@ -8,6 +8,7 @@ a{
 	border:2px;
 }
 #nav{
+	left:0px;
 	top:-20px;
 	background: green;
 	border-width:10px;
