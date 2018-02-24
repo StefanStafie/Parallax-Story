@@ -1,0 +1,139 @@
+a{
+	border:2px;
+}
+#nav{
+	background: green;
+	border-width:10px;
+	border-color: black;
+	color:black;
+	font-size:45px;
+	text-align: center;
+	margin-top:20px;
+	position:fixed;
+	width:328px;
+	height:208px;
+}
+#nav3{
+	background: green;
+	border-width:10px;
+	border-color: black;
+	color:black;
+	font-size:45px;
+	text-align: center;
+	margin-top:20px;
+	position:fixed;
+	width:328px;
+	height:141px;
+}
+#nav1{
+	margin:4px;
+	background: white;
+	width:320px;
+	height:64px;
+}
+#nav2{
+	margin:4px;
+	background: white;
+	width:320px;
+	height:64px;
+}
+
+#titlu {
+	font-size:24px;
+	text-decoration: underline;
+	width:100%;
+	height:100px;
+	margin-top:-25px;
+	padding-top:30px;
+}
+img{
+	border:2px;
+	border-color:black;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:1000px;
+	height:500px;
+
+}
+#teorie{
+
+}
+
+
+
+.refresh{
+	margin-bottom:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:200px;
+}
+input{
+	margin-left:auto;
+	margin-right:auto;
+	font-size:25px;
+	height:50px;
+	width:300px;
+}
+button{
+	font-size:25px;
+	height:50px;
+	width:300px;
+}
+#buton{
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+}
+#raspuns{
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+}
+#problema {
+	font-size:30px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+
+
+/* Teorie.html */
+#nav4{
+	background: green;
+	border-width:10px;
+	border-color: black;
+	color:black;
+	font-size:45px;
+	text-align: center;
+	padding-top:5px;
+	padding-left:5px;
+	position:fixed;
+	width:248px;
+	height:535px;
+}
+#nav4 a div{
+	width:240px;
+	height:64px;
+	text-align:center;
+	background-color:white;
+	margin:2px;
+}
+#nav4 a:visited{
+	color:black;
+}
+#nav4 a:link{
+	color:black;
+}
+.poz{
+	font-size:48px;
+	text-align:center;
+	width:1000px;
+	margin:auto;
+}
+
+.poz p{
+	font-size:36px;
+}
+

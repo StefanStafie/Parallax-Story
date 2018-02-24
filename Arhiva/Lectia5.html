@@ -1,0 +1,81 @@
+<head>
+	<title>Material educațional</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<a  href="../Deschide_aici.html"><div id="nav1">Inapoi</div></a>
+		<a  href="Lectia4.html"><div id="nav2"><<< Lectia 4 </div></a>
+		<a  href="Lectia6.html"><div id="nav2">Lectia 6 >>></div></a>
+	</div>
+	<div id="titlu" align="center">
+			<h1>Lectia 5: Hexagonul</h1>
+	</div>
+	<div id="teorie">
+		<img src="Lectia5.jpg">	
+	</div>
+	<div id="Problema">
+		<p id="enunt"></p>
+		<div class="refresh"><input class="refresh" type="button" value="Alta problema" onClick="history.go(0)"></div>
+		<div id="raspuns">
+			<input id="a" type="number" >
+		</div>
+		<div id="buton">
+			<button onclick="Functiea()" >verifica raspunsul</button>
+			
+		</button>
+	</div>
+
+
+<script>
+	/*calcul raza aleator*/
+	var R;
+	var prob;
+	
+	//alege problema
+	var rando = function() {
+	return Math.floor(Math.random()*3);
+	};
+	prob = rando();
+	if (prob==3)
+		prob=2;
+
+	//alege raza random
+	var random = function() {
+	return Math.floor(Math.random()*50);
+	};
+	R=random();
+	if(R==0)
+		R=1;
+	if(prob == 0)
+		document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDEF hexagon regulat de latura l = "+R+". Calculati apotema hexagonului.";
+	else
+		if(prob==1)
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDEF hexagon regulat de latura l = "+R+". Calculati aria hexagonului.";
+		else
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDEF hexagon regulat cu apotema a6 = "+R+". Calculati aria hexagonului.";
+	var A;
+	var B;
+	function Functiea(){
+		A = document.getElementById("a").value;
+		if(prob==0)	
+			B=R*Math.sqrt(3)/2;
+		else if(prob==1)
+			B = 3*R*R*Math.sqrt(3)/2;
+			else
+				B=6*R*R/Math.sqrt(3);
+		if(B != Math.floor(B))
+			B = B.toFixed(2);
+		if (A == B)
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	};
+
+	
+</script>
+
+</body>
+
+

@@ -1,0 +1,107 @@
+<head>
+	<title>Material educațional</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<a  href="../Deschide_aici.html"><div id="nav1">Inapoi</div></a>
+		<a  href="Lectia1.html"><div id="nav1"> <<< Lectia 1</div></a>
+		<a  href="Lectia3.html"><div id="nav2">Lectia 3 >>></div></a>
+	</div>
+	<div id="titlu" align="center">
+			<h1>Lectia 2: Triunghiul echilateral</h1>
+	</div>
+	<div id="teorie">
+		<img src="Lectia2.jpg">	
+	</div>
+	<div id="Problema">
+		<p id="enunt"></p>
+		<div class="refresh"><input class="refresh" type="button" value="Alta problema" onClick="history.go(0)"></div>
+		<div id="raspuns">
+			<input id="a" type="number" >
+		</div>
+		<div id="buton">
+			<button onclick="Functiea()" >verifica raspunsul</button>
+			
+		</button>
+	</div>
+
+
+<script>
+	/*calcul raza aleator*/
+	var R;
+	var prob;
+	
+	//alege problema
+	var rando = function() {
+	return Math.floor(Math.random()*4);
+	};
+	prob = rando();
+	if (prob==4)
+		prob=3;
+
+	//alege raza random
+	var random = function() {
+	return Math.floor(Math.random()*50);
+	};
+	R=random();
+	if(R==0)
+		R=1;
+	
+	if(prob == 0)
+		document.getElementById("enunt").innerHTML = "Aplicatii: Fie triunghiul ABC de latura l = "+R+". Calculati aria triunghiului.";
+	else if(prob==1)
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie triunghiul ABC de latura l = "+R+". Calculati inaltimea triunghiului.";
+		else if(prob == 2)
+				document.getElementById("enunt").innerHTML = "Aplicatii: Fie triunghiul ABC cu inaltimea h = "+R+". Calculati aria triunghiului.";
+			else 
+				document.getElementById("enunt").innerHTML = "Aplicatii: Fie triunghiul ABC cu latura l = "+R+". Calculati apotema triunghiului.";
+	var A;
+	var B;
+	function Functiea(){
+	if(prob==0){
+		
+		A = document.getElementById("a").value;
+		B = R*R*Math.sqrt(3)/4;
+		B = B.toFixed(2);
+		if (A == B)
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	}else if(prob==1){
+		
+		A = document.getElementById("a").value;
+		B = R*Math.sqrt(3)/2;
+		B = B.toFixed(2);
+		if (B == A) 
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	}else if(prob == 2){
+		
+		A = document.getElementById("a").value;
+		B=R*R*Math.sqrt(3)/3;
+		B = B.toFixed(2);
+		if (A == B)
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	}else{
+		A = document.getElementById("a").value;
+		B=R/(2*Math.sqrt(3));
+		B = B.toFixed(2);
+		if (A == B)
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	}
+
+	};
+
+	
+</script>
+
+</body>
+
+

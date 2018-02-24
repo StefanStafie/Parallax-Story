@@ -1,0 +1,101 @@
+<head>
+	<title>Material educațional</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="nav3">
+		<a  href="../Deschide_aici.html"><div id="nav1">Inapoi</div></a>
+		<a  href="Lectia5.html"><div id="nav2"><<< Lectia 5 </div></a>
+
+	</div>
+	<div id="titlu" align="center">
+			<h1>Lectia 6: Cubul</h1>
+	</div>
+	<div id="teorie">
+		<img src="Lectia6.jpg">	
+	</div>
+	<div id="Problema">
+		<p id="enunt"></p>
+		<div class="refresh"><input class="refresh" type="button" value="Alta problema" onClick="history.go(0)"></div>
+		<div id="raspuns">
+			<input id="a" type="number" >
+		</div>
+		<div id="buton">
+			<button onclick="Functiea()" >verifica raspunsul</button>
+			
+		</button>
+	</div>
+
+
+<script>
+	/*calcul raza aleator*/
+	var R;
+	var prob;
+	
+	//alege problema
+	var rando = function() {
+	return Math.floor(Math.random()*7);
+	};
+	prob = rando();
+	if (prob==7)
+		prob=6;
+
+	//alege raza random
+	var random = function() {
+	return Math.floor(Math.random()*50);
+	};
+	R=random();
+	if(R==0)
+		R=1;
+	if(prob == 0)
+		document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub de latura l = "+R+". Calculati volumul cubului.";
+	else
+		if(prob==1)
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub de latura l = "+R+". Calculati aria totala a cubului.";
+		else if (prob==2)
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub de latura l = "+R+". Calculati aria laterala a cubului.";
+			else if (prob == 3)
+				document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub de latura l = "+R+". Calculati diagonala cubului.";
+				else if (prob == 4)
+					document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub cu diagonala d = "+R+". Calculati volumul cubului.";
+					else if (prob == 5)
+						document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub cu diagonala d = "+R+". Calculati aria totala a cubului.";
+						else 
+							document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCDA'B'C'D' un cub cu diagonala d = "+R+". Calculati aria laterala a cubului.";
+	var A;
+	var B;
+	function Functiea(){
+		A = document.getElementById("a").value;
+		
+
+		if(prob==0)	
+			B=R*R*R;
+		else if(prob==1)
+			B = 6*R*R;
+			else if (prob==2)
+				B=4*R*R;
+				else if(prob==3)
+					B =R*Math.sqrt(3);
+					else if(prob==4)
+						B = R*R*R/Math.sqrt(27);
+						else if(prob==5)
+							B = 2*R*R;
+							else if(prob==6)
+								B = 4*R*R/3; 
+
+
+		if(B != Math.floor(B))
+			B = B.toFixed(2);
+		if (A == B)
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	};
+
+	
+</script>
+
+</body>
+
+
