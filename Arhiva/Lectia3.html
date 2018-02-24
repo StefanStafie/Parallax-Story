@@ -1,0 +1,112 @@
+<head>
+	<title>Material educațional</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<a  href="../index.html"><div id="nav1">Inapoi</div></a>
+		<a  href="Lectia2.html"><div id="nav1"> <<< Lectia 2</div></a>
+		<a  href="Lectia4.html"><div id="nav2">Lectia 4 >>></div></a>
+	</div>
+	<div id="titlu" align="center">
+			<h1>Lectia 3: Patratul</h1>
+	</div>
+	<div id="teorie">
+		<img src="Lectia3.jpg">	
+	</div>
+	<div id="Problema">
+		<p id="enunt"></p>
+		<div class="refresh"><input class="refresh" type="button" value="Alta problema" onClick="history.go(0)"></div>
+		<div id="raspuns">
+			<input id="a" type="number" >
+		</div>
+		<div id="buton">
+			<button onclick="Functiea()" >verifica raspunsul</button>
+			
+		</button>
+	</div>
+
+
+<script>
+	/*calcul raza aleator*/
+	var R;
+	var prob;
+	
+	//alege problema
+	var rando = function() {
+	return Math.floor(Math.random()*10);
+	};
+	prob = rando();
+	if (prob==10)
+		prob=2;
+
+	//alege raza random
+	var random = function() {
+	return Math.floor(Math.random()*50);
+	};
+	R=random();
+	if(R==0)
+		R=1;
+	
+	if(prob == 0)
+		document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, un patrat de latura l = "+R+". Calculati aria patratului.";
+	else
+		if(prob==1)
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, un patrat de latura l = "+R+". Calculati raza cercului circumscris.";
+		else if (prob==2)
+			document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, un patrat de latura l = "+R+". Calculati apotema patratului.";
+			else if (prob == 3)
+				document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, un patrat de latura l = "+R+". Calculati diagonala patratului.";
+				else if (prob == 4)
+					document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, cu raza cercului circumscris R = "+R+". Calculati perimetrul patratului.";
+					else if (prob == 5)
+						document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, cu raza cercului circumscris R = "+R+". Calculati apotema patratului.";
+						else if (prob == 6)
+							document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, cu raza cercului circumscris R = "+R+". Calculati aria patratului.";
+							else if (prob == 7)
+								document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, cu raza cercului circumscris R = "+R+". Calculati diagonala patratului.";
+								else if (prob == 8)
+									document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, cu aria A = "+R+". Calculati perimetrul patratului.";
+								else 
+									document.getElementById("enunt").innerHTML = "Aplicatii: Fie ABCD, cu aria A = "+R+". Calculati apotema patratului.";
+
+	var A;
+	var B;
+	function Functiea(){
+		A = document.getElementById("a").value;
+		if(prob==0)	
+			B=R*R;
+		else if(prob==1)
+			B = R/Math.sqrt(2);
+			else if (prob==2)
+				B=R/(Math.sqrt(2)*2);
+				else if(prob==3)
+					B =R*Math.sqrt(2);
+					else if(prob==4)
+						B = 4*Math.sqrt(2)*R;
+						else if(prob==5)
+							B = R/2;
+							else if(prob==6)
+								B = R*R*2;
+								else if(prob==7)
+									B = 2*R;	
+									else if(prob==8)
+										B = 4*Math.sqrt(R);	
+									else 
+										B = Math.sqrt(R)/(2*Math.sqrt(2));
+
+		if(B != Math.floor(B))
+			B = B.toFixed(2);
+		if (A == B)
+			alert("Felicitari. Raspuns corect");
+		else
+			alert("Gresit. Raspunsul corect era "+B);
+	};
+
+	
+</script>
+
+</body>
+
+

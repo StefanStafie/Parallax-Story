@@ -1,0 +1,71 @@
+body{
+	background-image: url("Arhiva/Wallpaper.");
+	background-size: 100% 100%; 
+	
+}
+
+
+#titlu {
+
+	background-image: url("Wallpaper.png");
+	width:100%;
+	height:140px;
+	margin-bottom:30px;
+}
+h1{
+	font-size:46px;
+
+}
+div{
+	border-radius:100px;
+}
+h3{
+	font-size:36px;
+
+}
+a:visited{
+	color:black;
+}
+a:link{
+	color:black;
+}
+a:visited {
+  color:black;
+}
+#teorie{
+
+	color:black;
+	height:150px;
+	width:500px;
+	background-color: gray;
+	margin:auto;
+	
+	margin-bottom:20px;
+	font-size:40px;
+	text-align: center;
+	line-height: 140px;
+}
+
+
+#lectii{
+	height:500px;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.link{
+	display:inline-block;
+	vertical-align: middle;
+	top-padding:50px;
+}
+.sq{
+	line-height: 150px;
+	font-size:40px;
+	background-color:gray;
+	display:inline-block;
+	height:150px;
+	width: 314px;
+	margin:5px;
+	text-align: center;
+	vertical-align: middle;
+}

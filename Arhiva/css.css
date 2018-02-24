@@ -1,0 +1,155 @@
+div{
+	border-radius:100px;
+}
+#poze{
+	margin-top:150px;
+}
+a{
+	border:2px;
+}
+#nav{
+	top:-20px;
+	background: green;
+	border-width:10px;
+	border-color: black;
+	color:black;
+	font-size:45px;
+	text-align: center;
+	margin-top:20px;
+	position:fixed;
+	width:1020px;
+	height:76px;
+}
+#nav3{
+	top:-20px;
+	background: green;
+	border-width:10px;
+	border-color: black;
+	color:black;
+	font-size:45px;
+	text-align: center;
+	margin-top:20px;
+	position:fixed;
+	width:680px;
+	height:74px;
+}
+#nav1{
+	display:inline-block;
+	margin:4px;
+	background: white;
+	width:320px;
+	height:64px;
+}
+#nav2{
+	display:inline-block;
+	margin:4px;
+	background: white;
+	width:320px;
+	height:64px;
+}
+
+#titlu {
+	text-align:center;
+	
+	font-size:24px;
+	text-decoration: underline;
+	width:100%;
+	height:100px;
+	padding-top:100px;
+}
+img{
+	border:2px;
+	border-color:black;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:1000px;
+	height:500px;
+
+}
+#teorie{
+
+}
+
+a:visited{
+	color:black;
+}
+a:link{
+	color:black;
+}
+.refresh{
+	margin-bottom:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:200px;
+}
+input{
+	margin-left:auto;
+	margin-right:auto;
+	font-size:25px;
+	height:50px;
+	width:300px;
+}
+button{
+	font-size:25px;
+	height:50px;
+	width:300px;
+}
+#buton{
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+}
+#raspuns{
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+}
+#problema {
+	font-size:30px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+
+
+/* Teorie.html */
+#nav4{
+	left:0px;
+	top:0px;
+	background: green;
+	border-width:10px;
+	border-color: black;
+	color:black;
+	font-size:45px;
+	text-align: center;
+	position:fixed;
+	margin:auto;
+	height:140px;
+}
+#nav4 a div{
+	display:inline-block;
+	width:240px;
+	height:64px;
+	text-align:center;
+	background-color:white;
+	margin:2px;
+}
+#nav4 a:visited{
+	color:black;
+}
+#nav4 a:link{
+	color:black;
+}
+.poz{
+	font-size:48px;
+	text-align:center;
+	width:1000px;
+	margin:auto;
+}
+
+.poz p{
+	font-size:36px;
+}
+
