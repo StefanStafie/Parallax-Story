@@ -18,7 +18,9 @@ h3{
 	font-size:36px;
 
 }
-
+a:link{
+	color:black;
+}
 a:visited {
   color:black;
 }
