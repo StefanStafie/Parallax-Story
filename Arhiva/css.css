@@ -10,7 +10,7 @@ a{
 #nav{
 	left:0px;
 	top:-20px;
-	background: green;
+	background: gray;
 	border-width:10px;
 	border-color: black;
 	color:black;
@@ -23,7 +23,7 @@ a{
 }
 #nav3{
 	top:-20px;
-	background: green;
+	background: gray;
 	border-width:10px;
 	border-color: black;
 	color:black;
@@ -119,7 +119,7 @@ button{
 #nav4{
 	left:0px;
 	top:0px;
-	background: green;
+	background: gray;
 	border-width:10px;
 	border-color: black;
 	color:black;
